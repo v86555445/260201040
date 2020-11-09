@@ -1,5 +1,5 @@
 num=int(input("enter an integer  :"))
 if num <10:
-  print("0"+str(num))
+  print(num)
 else:
-  print(num%100)
+  print(int(str(num%100)[0]) + int(str(num%100)[1]))
