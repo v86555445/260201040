@@ -13,5 +13,6 @@ def get_overlap(a,b):
   return list(intersection)
 a=get_rand_list(0,10,5)
 b=get_rand_list(0,10,5)
-
+print(a)
+print(b)
 print(get_overlap(a,b))
