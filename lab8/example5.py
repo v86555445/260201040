@@ -7,10 +7,10 @@ def password_checker(p):
     numeric=False
     Specialchar=False
     for i in p:
-      if i.isalpha():
+      if i.isnumeric():
+        numeric=True
+      elif i.isalpha():
         alpha=True
-      elif i.isnumeric():
-        numbers=True
       else:
         Specialchar=True
     if alpha==True:
@@ -20,5 +20,5 @@ def password_checker(p):
     if Specialchar==True:
       level+=1
     return level
-pw=(input("Enter password:"))
+pw=input("Enter password:")
 print("Security level :",password_checker(pw))
